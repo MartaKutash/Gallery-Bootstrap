@@ -1,0 +1,312 @@
+@secondary-color: black;
+@main_color:white;
+@font-family: Arial, sans-serif;
+@header_back: blue;
+@background_content:pink;
+
+
+.footer_block() {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.picture_border() {
+	width: 150px;
+	height: 150px;
+	border: 5px solid #2c2c2c;
+    padding: 5px;
+    display: inline-block;
+}
+
+.picture() {
+	padding-top: 20px;
+	display: flex;
+	text-align: left;
+	margin-top: 30px;
+}
+
+.picture_link() {
+	text-decoration: none;
+	margin-left: 30px;
+	padding-right: 50px;
+	font-size: 16px;
+	width: 900px;
+	max-width: 100%;
+    color: @secondary-color;
+}
+
+body {
+    font-family:@font-family;
+    @media screen and (max-width: 765px) {
+        .phoneblock {
+            margin-top: 20px;
+            margin-left: -200px;
+            .phone {
+                width: 40px;
+                height: 40px;
+            }
+            .phone_text {
+                font-weight: bold;
+                margin-top: -30px;
+                margin-left: 170px;
+            }
+    }
+    }
+}
+
+header {
+    background-color: @header_back;
+    .logo {
+        color: @main_color;
+    }
+    a {
+        text-decoration: none;
+    }
+    .header_header {
+        font-size: 1.5rem;
+        color: @main_color;
+    }
+    .header_picture-fluid {
+        width: 70px;
+        height: 70px;
+        transition: transform 0.5s;
+        border: 2px solid rgba(125, 125, 128, 0.5);
+        border-radius: 10px;
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+
+    nav {
+        .navbar-toggler-icon {
+            width: 2.5em;
+            height: 2.5em;
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' width='30' height='30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); // Ссылка на изображение иконки (SVG или другой формат)
+          }
+        span{
+            color: @main_color;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            color: @main_color;
+
+            .nav-item {
+                font-weight: bold;
+                margin-right: 30px;
+                color: @main_color;
+
+                .nav-link {
+                    color: @main_color;
+
+                }
+            }
+        }
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        &:a {
+            text-decoration: none;
+            padding: 10px;
+        }
+        &:hover .dropdown-menu {
+            display: block;
+        }
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: @background_content;
+            min-width: 300px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            a {
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                &:hover {
+                    background-color: @background_content;
+                }
+            }
+        }
+    }
+}
+
+
+main {
+    background: @background_content;
+    .sheya_big {
+        width: 600px;
+        height: 600px;
+        padding-top: 70px;
+        padding-bottom: 20px;
+        max-width: 100%;
+    }
+    .bigsheya_text {
+        margin: auto auto;
+        padding: 30px;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .bigpicture_name {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .picture_sheya {
+        color:@secondary-color;
+        padding-top: 20px;
+        display: flex;
+        text-align: left;
+        .sheya {
+            .picture_border();
+        }
+        .sheya_link {
+            .picture_link();
+        }
+    }
+    .picture_germes {
+        .picture();
+        .germes {
+            .picture_border();
+        }
+        .germes_link {
+            .picture_link();
+        }
+    }
+    .picture_sloni {
+        .picture();
+        .sloni {
+            .picture_border();
+        }
+        .sloni_link {
+            .picture_link();
+        }
+    }
+    .picture_lico {
+        .picture();
+        .lico {
+            .picture_border();
+        }
+        .lico_link {
+            .picture_link();
+        }
+    }
+    .picture_vremya {
+        .picture();
+        .vremya {
+            .picture_border();
+        }
+        .vremya_link {
+            .picture_link();
+        }
+    }
+    .picture_lodka {
+        .picture();
+        .lodka {
+            .picture_border();
+        }
+        .lodka_link {
+            .picture_link();
+        }
+    }
+    .picture_west {
+        .picture();
+        .west {
+            .picture_border();
+        }
+        .west_link {
+            .picture_link();
+        }
+    }
+    .picture_gala {
+        .picture();
+        padding-bottom: 20px ;
+        .gala {
+            .picture_border();
+        }
+        .gala_link {
+            .picture_link();
+        }
+    }
+    .about_foto {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .dali_photo {
+            max-width: 100%;
+            height: auto;
+        }
+        .about_text {
+            line-height: 1.8;
+        }
+    }
+    .notification {
+        background-color: #f8d7da;
+        color: #dd0f24;
+        padding: 100px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-size: 18px;
+        line-height: 1.5;
+        height: 450px;
+    }
+
+}
+
+
+footer {
+    color: @main_color;
+    font-size: 0.9rem;
+    background-color: @header_back;
+    .instablock {
+        .footer_block();
+        .insta {
+            width: 40px;
+            height: 40px;
+        }
+        .insta_text {
+            font-weight: bold;
+            margin-top: -30px;
+            margin-left: 170px;
+            color:@main_color;
+        }
+        .our_insta {
+            text-decoration: none;
+        }
+    }
+    .telegramblock {
+        .footer_block();
+        .telegram {
+            width: 40px;
+            height: 40px;
+        }
+        .telega_text {
+            font-weight: bold;
+            margin-top: -30px;
+            margin-left: 170px;
+            color:@main_color;
+        }
+        .our_telegram {
+            text-decoration: none;
+        }
+    }
+    .phoneblock {
+        margin-top: 20px;
+        .phone {
+            width: 40px;
+            height: 40px;
+        }
+        .phone_text {
+            font-weight: bold;
+            margin-top: -30px;
+            margin-left: 170px;
+        }
+    }
+}
